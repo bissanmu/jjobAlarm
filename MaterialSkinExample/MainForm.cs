@@ -2,6 +2,7 @@
 using MaterialSkin.Controls;
 using Oracle.ManagedDataAccess.Client;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -11,6 +12,7 @@ namespace MaterialSkinExample
     {
         private readonly MaterialSkinManager materialSkinManager;
         private String connectionString = "data source=(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 127.0.0.1)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = XE)));USER ID=SCOTT;PASSWORD=TIGER;";
+        
         public MainForm()
         {
             InitializeComponent();
@@ -26,7 +28,6 @@ namespace MaterialSkinExample
 
             initstep2();
         }
-
         private void initstep2()
         {
             materialListView1.Items.Clear();
@@ -62,16 +63,6 @@ namespace MaterialSkinExample
                     materialSkinManager.ColorScheme = new ColorScheme(Primary.Green600, Primary.Green700, Primary.Green200, Accent.Red100, TextShade.WHITE);
                     break;
             }
-        }
-
-        private void materialRaisedButton2_Click(object sender, EventArgs e)
-        {
-            materialProgressBar1.Value = Math.Min(materialProgressBar1.Value + 10, 100);
-        }
-
-        private void materialFlatButton4_Click(object sender, EventArgs e)
-        {
-            materialProgressBar1.Value = Math.Max(materialProgressBar1.Value - 10, 0);
         }
 
         //nextBtn
@@ -187,10 +178,6 @@ namespace MaterialSkinExample
             PopulateListViewFromOracle(materialListView1, connectionString, query);
         }
 
-        private void materialDataTable1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void displayTab3()
         {
@@ -229,6 +216,11 @@ namespace MaterialSkinExample
                 materialLabel9.Text = column5Data;
             }
 
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            materialTabControl1.SelectedTab = tabPage4;
         }
     }
 }

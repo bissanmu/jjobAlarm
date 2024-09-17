@@ -1,13 +1,16 @@
-﻿using System;
-using System.Windows.Forms;
-using MaterialSkin;
+﻿using MaterialSkin;
 using MaterialSkin.Controls;
+using Oracle.ManagedDataAccess.Client;
+using System;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MaterialSkinExample
 {
     public partial class MainForm : MaterialForm
     {
         private readonly MaterialSkinManager materialSkinManager;
+        private String connectionString = "data source=(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 127.0.0.1)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = XE)));USER ID=SCOTT;PASSWORD=TIGER;";
         public MainForm()
         {
             InitializeComponent();
@@ -18,30 +21,23 @@ namespace MaterialSkinExample
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
             // Add dummy data to the listview
-            seedListView();
+            //seedListView();
+            //Header 셋팅
 
+            initstep2();
         }
 
-        private void seedListView()
+        private void initstep2()
         {
-            //Define
-            var data = new[]
-            {
-                new []{"Lollipop", "392", "0.2", "0"},
-                new []{"KitKat", "518", "26.0", "7"},
-                new []{"Ice cream sandwich", "237", "9.0", "4.3"},
-                new []{"Jelly Bean", "375", "0.0", "0.0"},
-                new []{"Honeycomb", "408", "3.2", "6.5"}
-            };
-
-            //Add
-            foreach (string[] version in data)
-            {
-                var item = new ListViewItem(version);
-                materialListView1.Items.Add(item);
-            }
+            materialListView1.Items.Clear();
+            materialListView1.Columns[0].Width = 100;
+            materialListView1.Columns[1].Width = 200;
+            materialListView1.Columns[2].Width = 200;
+            materialListView1.Columns[3].Width = 200;
+            materialListView1.Columns[4].Width = 150;
+            materialListView1.Columns[5].Width = 150;
         }
-
+ 
         private void materialButton1_Click(object sender, EventArgs e)
         {
             materialSkinManager.Theme = materialSkinManager.Theme == MaterialSkinManager.Themes.DARK ? MaterialSkinManager.Themes.LIGHT : MaterialSkinManager.Themes.DARK;
@@ -78,16 +74,6 @@ namespace MaterialSkinExample
             materialProgressBar1.Value = Math.Max(materialProgressBar1.Value - 10, 0);
         }
 
-        private void materialTabSelector1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void materialListView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         //nextBtn
         private void nextBtn_Click(object sender, EventArgs e)
         {
@@ -107,26 +93,31 @@ namespace MaterialSkinExample
             {
                 // tabPage1에 대한 작업
                 materialTabControl1.SelectedTab = tabPage2;
+
             }
             else if (currentTab.Name == "tabPage2")
             {
                 // tabPage2에 대한 작업
-                materialTabControl1.SelectedTab = tabPage3;
+                displayTab3();
+                if (materialListView1.SelectedItems.Count > 0)
+                {
+                    materialTabControl1.SelectedTab = tabPage3;
+                }
+                else
+                {
+                    MessageBox.Show("선택된 내역이 없습니다");
+                    materialTabControl1.SelectedTab = tabPage2;
+                }
                 prevBtn.Enabled = true;
             }
             else if (currentTab.Name == "tabPage3")
             {
                 // tabPage2에 대한 작업
-                materialTabControl1.SelectedTab = tabPage4;
+                materialTabControl1.SelectedTab = tabPage3;
                 prevBtn.Enabled = true;
+
             }
             else if (currentTab.Name == "tabPage4")
-            {
-                // tabPage2에 대한 작업
-                materialTabControl1.SelectedTab = tabPage5;
-                prevBtn.Enabled = true;
-            }
-            else if (currentTab.Name == "tabPage5")
             {
                 nextBtn.Enabled = false;
                 prevBtn.Enabled = true;
@@ -148,16 +139,96 @@ namespace MaterialSkinExample
             }
             else if (currentTab.Name == "tabPage3")
             {
+                displayTab3();
                 materialTabControl1.SelectedTab = tabPage2;
             }
             else if (currentTab.Name == "tabPage4")
             {
                 materialTabControl1.SelectedTab = tabPage3;
             }
-            else if (currentTab.Name == "tabPage5")
+ 
+        }
+
+        public void PopulateListViewFromOracle(MaterialSkin2Framework.Controls.MaterialListView materialListView1, string connectionString, string query)
+        {
+            using (OracleConnection connection = new OracleConnection(connectionString))
             {
-                materialTabControl1.SelectedTab = tabPage4;
+                try
+                {
+                    connection.Open();
+                    using (OracleCommand command = new OracleCommand(query, connection))
+                    {
+                        using (OracleDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                ListViewItem item = new ListViewItem(reader["status"].ToString());
+                                item.SubItems.Add(reader["order_id"].ToString());
+                                item.SubItems.Add(reader["name"].ToString());
+                                item.SubItems.Add(reader["tags"].ToString());
+                                item.SubItems.Add(reader["start_time"].ToString());
+                                item.SubItems.Add(reader["end_time"].ToString());
+                                materialListView1.Items.Add(item);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("데이터 조회 중 오류 발생: " + ex.Message);
+                }
             }
+        }
+
+        private void materialButton1_Click_1(object sender, EventArgs e)
+        {
+            initstep2();
+            string query = "SELECT message as status , order_id, name, tags, start_time, end_time FROM jjobs_execution";
+            PopulateListViewFromOracle(materialListView1, connectionString, query);
+        }
+
+        private void materialDataTable1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void displayTab3()
+        {
+            if(rDevBtn.Checked == true)
+            {
+                materialLabel3.Text = "개발계";
+            }
+            else
+            {
+                materialLabel3.Text = "검증계";
+            }
+
+            if (rJobBtn.Checked == true)
+            {
+                materialLabel5.Text = "Job 단위";
+            }
+            else
+            {
+                materialLabel5.Text = "Folder 단위";
+            }
+
+            if (materialListView1.SelectedItems.Count > 0)
+            {
+                ListViewItem item = materialListView1.SelectedItems[0];
+
+                string column1Data = item.Text; // 첫 번째 열의 데이터
+                string column2Data = item.SubItems[1].Text; // 두 번째 열의 데이터
+                string column3Data = item.SubItems[2].Text; // 세 번째 열의 데이터
+                string column4Data = item.SubItems[3].Text; // 
+                string column5Data = item.SubItems[4].Text; // 
+                string column6Data = item.SubItems[5].Text; // 
+                // 데이터 사용
+                // MessageBox.Show($"선택된 항목: {column1Data}, {column2Data}, {column3Data}, {column4Data}, {column5Data}, {column6Data}");
+
+                materialLabel7.Text = column3Data;
+                materialLabel9.Text = column5Data;
+            }
+
         }
     }
 }

@@ -52,7 +52,8 @@ namespace MaterialSkinExample
         public void Alert(string msg, Form_Alert.enmType type)
         {
             Form_Alert frm = new Form_Alert();
-            frm.showAlert(msg, type);
+            frm.TopMost = true; // Ensure the alert appears on top of other windows
+            frm.ShowAlert(msg, type);
         }
         private void initstep2()
         {

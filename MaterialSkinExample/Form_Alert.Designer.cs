@@ -74,10 +74,7 @@ namespace MaterialSkinExample
             lblMsg.Size = new Size(252, 50);
             lblMsg.TabIndex = 2;
             lblMsg.Text = "Message Text";
-            // 
-            // timer1
-            // 
-            timer1.Tick += timer1_Tick;
+
             // 
             // linkLabel1
             // 
@@ -88,7 +85,6 @@ namespace MaterialSkinExample
             linkLabel1.TabIndex = 3;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "바로가기";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Form_Alert
             // 

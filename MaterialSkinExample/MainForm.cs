@@ -4,6 +4,7 @@ using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MaterialSkinExample
@@ -12,7 +13,7 @@ namespace MaterialSkinExample
     {
         private readonly MaterialSkinManager materialSkinManager;
         private String connectionString = "data source=(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 127.0.0.1)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = XE)));USER ID=SCOTT;PASSWORD=TIGER;";
-        
+        private bool isRunning = false;
         public MainForm()
         {
             InitializeComponent();
@@ -27,6 +28,31 @@ namespace MaterialSkinExample
             //Header 셋팅
 
             initstep2();
+        }
+
+        private async Task RunInfiniteLoopAsync()
+        {
+            while (isRunning)
+            {
+                // 여기에 수행할 특정 액션을 작성하세요
+                PerformAction();
+
+                // 10초 대기
+                await Task.Delay(10000);
+            }
+        }
+
+        private void PerformAction()
+        {
+            // 여기에 10초마다 수행할 액션을 구현하세요
+            // Console.WriteLine("액션 수행 중...");
+
+            this.Alert("Succees Alert", Form_Alert.enmType.Success);
+        }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type);
         }
         private void initstep2()
         {
@@ -218,9 +244,14 @@ namespace MaterialSkinExample
 
         }
 
-        private void materialButton2_Click(object sender, EventArgs e)
+        private async void materialButton2_Click(object sender, EventArgs e)
         {
             materialTabControl1.SelectedTab = tabPage4;
+            if (!isRunning)
+            {
+                isRunning = true;
+                await RunInfiniteLoopAsync();
+            }
         }
     }
 }

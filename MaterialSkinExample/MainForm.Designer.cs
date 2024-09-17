@@ -44,6 +44,15 @@ namespace MaterialSkinExample
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rDevBtn = new MaterialSkin2Framework.Controls.MaterialRadioButton();
             this.rVerifyBtn = new MaterialSkin2Framework.Controls.MaterialRadioButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.materialButton1 = new MaterialSkin2Framework.Controls.MaterialButton();
+            this.materialListView1 = new MaterialSkin2Framework.Controls.MaterialListView();
+            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.order_id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tags = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.start_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.end_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.materialButton2 = new MaterialSkin2Framework.Controls.MaterialButton();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
@@ -73,24 +82,15 @@ namespace MaterialSkinExample
             this.item3ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
             this.prevBtn = new MaterialSkin.Controls.MaterialFlatButton();
             this.oracleCommand1 = new Oracle.ManagedDataAccess.Client.OracleCommand();
-            this.materialListView1 = new MaterialSkin2Framework.Controls.MaterialListView();
-            this.status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.order_id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tags = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.start_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.end_time = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.materialButton1 = new MaterialSkin2Framework.Controls.MaterialButton();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.materialContextMenuStrip1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // nextBtn
@@ -100,8 +100,8 @@ namespace MaterialSkinExample
             this.nextBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.nextBtn.Depth = 0;
             this.nextBtn.Icon = null;
-            this.nextBtn.Location = new System.Drawing.Point(1504, 970);
-            this.nextBtn.Margin = new System.Windows.Forms.Padding(6, 10, 6, 10);
+            this.nextBtn.Location = new System.Drawing.Point(926, 539);
+            this.nextBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.nextBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.Primary = true;
@@ -117,11 +117,11 @@ namespace MaterialSkinExample
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(0, 934);
+            this.materialDivider1.Location = new System.Drawing.Point(0, 534);
             this.materialDivider1.Margin = new System.Windows.Forms.Padding(0);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(1670, 2);
+            this.materialDivider1.Size = new System.Drawing.Size(1063, 1);
             this.materialDivider1.TabIndex = 16;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -131,11 +131,11 @@ namespace MaterialSkinExample
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(0, 103);
-            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.materialTabSelector1.Location = new System.Drawing.Point(0, 59);
+            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(1670, 79);
+            this.materialTabSelector1.Size = new System.Drawing.Size(1063, 45);
             this.materialTabSelector1.TabIndex = 17;
             this.materialTabSelector1.Text = "materialTabSelector1";
             // 
@@ -149,12 +149,12 @@ namespace MaterialSkinExample
             this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Controls.Add(this.tabPage4);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(27, 178);
-            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.materialTabControl1.Location = new System.Drawing.Point(17, 102);
+            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1609, 737);
+            this.materialTabControl1.Size = new System.Drawing.Size(1024, 421);
             this.materialTabControl1.TabIndex = 18;
             // 
             // tabPage1
@@ -163,11 +163,11 @@ namespace MaterialSkinExample
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 31);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage1.Size = new System.Drawing.Size(1601, 702);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage1.Size = new System.Drawing.Size(1016, 395);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Step1 서버";
             // 
@@ -176,11 +176,9 @@ namespace MaterialSkinExample
             this.groupBox2.Controls.Add(this.rJobBtn);
             this.groupBox2.Controls.Add(this.rFolderBtn);
             this.groupBox2.Font = new System.Drawing.Font("Consolas", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(866, 184);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(5);
+            this.groupBox2.Location = new System.Drawing.Point(551, 105);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox2.Size = new System.Drawing.Size(528, 336);
+            this.groupBox2.Size = new System.Drawing.Size(336, 192);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "알림 단위";
@@ -191,7 +189,7 @@ namespace MaterialSkinExample
             this.rJobBtn.Checked = true;
             this.rJobBtn.Depth = 0;
             this.rJobBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rJobBtn.Location = new System.Drawing.Point(50, 105);
+            this.rJobBtn.Location = new System.Drawing.Point(32, 60);
             this.rJobBtn.Margin = new System.Windows.Forms.Padding(0);
             this.rJobBtn.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rJobBtn.MouseState = MaterialSkin2Framework.MouseState.HOVER;
@@ -208,7 +206,7 @@ namespace MaterialSkinExample
             this.rFolderBtn.AutoSize = true;
             this.rFolderBtn.Depth = 0;
             this.rFolderBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rFolderBtn.Location = new System.Drawing.Point(50, 180);
+            this.rFolderBtn.Location = new System.Drawing.Point(32, 103);
             this.rFolderBtn.Margin = new System.Windows.Forms.Padding(0);
             this.rFolderBtn.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rFolderBtn.MouseState = MaterialSkin2Framework.MouseState.HOVER;
@@ -225,11 +223,9 @@ namespace MaterialSkinExample
             this.groupBox1.Controls.Add(this.rDevBtn);
             this.groupBox1.Controls.Add(this.rVerifyBtn);
             this.groupBox1.Font = new System.Drawing.Font("Consolas", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(233, 184);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(5);
+            this.groupBox1.Location = new System.Drawing.Point(148, 105);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(5);
-            this.groupBox1.Size = new System.Drawing.Size(528, 336);
+            this.groupBox1.Size = new System.Drawing.Size(336, 192);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "서버 리스트";
@@ -240,7 +236,7 @@ namespace MaterialSkinExample
             this.rDevBtn.Checked = true;
             this.rDevBtn.Depth = 0;
             this.rDevBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rDevBtn.Location = new System.Drawing.Point(50, 105);
+            this.rDevBtn.Location = new System.Drawing.Point(32, 60);
             this.rDevBtn.Margin = new System.Windows.Forms.Padding(0);
             this.rDevBtn.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rDevBtn.MouseState = MaterialSkin2Framework.MouseState.HOVER;
@@ -257,7 +253,7 @@ namespace MaterialSkinExample
             this.rVerifyBtn.AutoSize = true;
             this.rVerifyBtn.Depth = 0;
             this.rVerifyBtn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rVerifyBtn.Location = new System.Drawing.Point(50, 180);
+            this.rVerifyBtn.Location = new System.Drawing.Point(32, 103);
             this.rVerifyBtn.Margin = new System.Windows.Forms.Padding(0);
             this.rVerifyBtn.MouseLocation = new System.Drawing.Point(-1, -1);
             this.rVerifyBtn.MouseState = MaterialSkin2Framework.MouseState.HOVER;
@@ -268,6 +264,92 @@ namespace MaterialSkinExample
             this.rVerifyBtn.TabStop = true;
             this.rVerifyBtn.Text = "J-JOBS 검증계";
             this.rVerifyBtn.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.materialButton1);
+            this.tabPage2.Controls.Add(this.materialListView1);
+            this.tabPage2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage2.Size = new System.Drawing.Size(1016, 395);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Step2 대상작업";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin2Framework.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(923, 359);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin2Framework.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(85, 36);
+            this.materialButton1.TabIndex = 2;
+            this.materialButton1.Text = "내역조회";
+            this.materialButton1.Type = MaterialSkin2Framework.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click_1);
+            // 
+            // materialListView1
+            // 
+            this.materialListView1.AutoSizeTable = false;
+            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.status,
+            this.order_id,
+            this.name,
+            this.tags,
+            this.start_time,
+            this.end_time});
+            this.materialListView1.Depth = 0;
+            this.materialListView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.materialListView1.FullRowSelect = true;
+            this.materialListView1.HideSelection = false;
+            this.materialListView1.Location = new System.Drawing.Point(0, 0);
+            this.materialListView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.materialListView1.MinimumSize = new System.Drawing.Size(127, 57);
+            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialListView1.MouseState = MaterialSkin2Framework.MouseState.OUT;
+            this.materialListView1.Name = "materialListView1";
+            this.materialListView1.OwnerDraw = true;
+            this.materialListView1.Size = new System.Drawing.Size(1020, 351);
+            this.materialListView1.TabIndex = 0;
+            this.materialListView1.UseCompatibleStateImageBehavior = false;
+            this.materialListView1.View = System.Windows.Forms.View.Details;
+            // 
+            // status
+            // 
+            this.status.Text = "Status";
+            // 
+            // order_id
+            // 
+            this.order_id.Text = "Order id";
+            // 
+            // name
+            // 
+            this.name.Text = "Name";
+            // 
+            // tags
+            // 
+            this.tags.Text = "Tags";
+            // 
+            // start_time
+            // 
+            this.start_time.Text = "Start Time";
+            // 
+            // end_time
+            // 
+            this.end_time.Text = "End time";
             // 
             // tabPage3
             // 
@@ -287,11 +369,11 @@ namespace MaterialSkinExample
             this.tabPage3.Controls.Add(this.materialLabel1);
             this.tabPage3.Controls.Add(this.materialDivider2);
             this.tabPage3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.Location = new System.Drawing.Point(4, 31);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage3.Size = new System.Drawing.Size(1601, 702);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage3.Size = new System.Drawing.Size(1016, 395);
             this.tabPage3.TabIndex = 1;
             this.tabPage3.Text = "Step3 선택내역";
             // 
@@ -303,8 +385,7 @@ namespace MaterialSkinExample
             this.materialButton2.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(1384, 666);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.Location = new System.Drawing.Point(881, 381);
             this.materialButton2.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
             this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -321,13 +402,13 @@ namespace MaterialSkinExample
             this.materialLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("맑은 고딕", 21.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(61, 38);
-            this.materialLabel2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.materialLabel2.Location = new System.Drawing.Point(39, 22);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(1062, 102);
+            this.materialLabel2.Size = new System.Drawing.Size(676, 58);
             this.materialLabel2.TabIndex = 12;
             this.materialLabel2.Text = "선택한 스케쥴 내역";
             // 
@@ -337,8 +418,7 @@ namespace MaterialSkinExample
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel9.Location = new System.Drawing.Point(324, 572);
-            this.materialLabel9.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel9.Location = new System.Drawing.Point(206, 327);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(71, 32);
@@ -349,9 +429,8 @@ namespace MaterialSkinExample
             // 
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("맑은 고딕", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.materialLabel8.Location = new System.Drawing.Point(119, 572);
-            this.materialLabel8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel8.Location = new System.Drawing.Point(76, 327);
             this.materialLabel8.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(117, 20);
@@ -362,11 +441,10 @@ namespace MaterialSkinExample
             // 
             this.materialDivider5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider5.Depth = 0;
-            this.materialDivider5.Location = new System.Drawing.Point(72, 551);
-            this.materialDivider5.Margin = new System.Windows.Forms.Padding(5);
+            this.materialDivider5.Location = new System.Drawing.Point(46, 315);
             this.materialDivider5.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialDivider5.Name = "materialDivider5";
-            this.materialDivider5.Size = new System.Drawing.Size(36, 74);
+            this.materialDivider5.Size = new System.Drawing.Size(23, 42);
             this.materialDivider5.TabIndex = 9;
             this.materialDivider5.Text = "materialDivider5";
             // 
@@ -376,8 +454,7 @@ namespace MaterialSkinExample
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel7.Location = new System.Drawing.Point(295, 457);
-            this.materialLabel7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel7.Location = new System.Drawing.Point(188, 261);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(71, 32);
@@ -388,9 +465,8 @@ namespace MaterialSkinExample
             // 
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
-            this.materialLabel6.Font = new System.Drawing.Font("맑은 고딕", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.materialLabel6.Location = new System.Drawing.Point(119, 457);
-            this.materialLabel6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(76, 261);
             this.materialLabel6.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(93, 20);
@@ -401,11 +477,10 @@ namespace MaterialSkinExample
             // 
             this.materialDivider4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider4.Depth = 0;
-            this.materialDivider4.Location = new System.Drawing.Point(72, 436);
-            this.materialDivider4.Margin = new System.Windows.Forms.Padding(5);
+            this.materialDivider4.Location = new System.Drawing.Point(46, 249);
             this.materialDivider4.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialDivider4.Name = "materialDivider4";
-            this.materialDivider4.Size = new System.Drawing.Size(36, 74);
+            this.materialDivider4.Size = new System.Drawing.Size(23, 42);
             this.materialDivider4.TabIndex = 6;
             this.materialDivider4.Text = "materialDivider4";
             // 
@@ -415,8 +490,7 @@ namespace MaterialSkinExample
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel5.Location = new System.Drawing.Point(247, 340);
-            this.materialLabel5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel5.Location = new System.Drawing.Point(157, 194);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(71, 32);
@@ -427,9 +501,8 @@ namespace MaterialSkinExample
             // 
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
-            this.materialLabel4.Font = new System.Drawing.Font("맑은 고딕", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.materialLabel4.Location = new System.Drawing.Point(119, 345);
-            this.materialLabel4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(76, 197);
             this.materialLabel4.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(53, 20);
@@ -440,11 +513,10 @@ namespace MaterialSkinExample
             // 
             this.materialDivider3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider3.Depth = 0;
-            this.materialDivider3.Location = new System.Drawing.Point(72, 324);
-            this.materialDivider3.Margin = new System.Windows.Forms.Padding(5);
+            this.materialDivider3.Location = new System.Drawing.Point(46, 185);
             this.materialDivider3.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialDivider3.Name = "materialDivider3";
-            this.materialDivider3.Size = new System.Drawing.Size(36, 74);
+            this.materialDivider3.Size = new System.Drawing.Size(23, 42);
             this.materialDivider3.TabIndex = 3;
             this.materialDivider3.Text = "materialDivider3";
             // 
@@ -454,8 +526,7 @@ namespace MaterialSkinExample
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(247, 240);
-            this.materialLabel3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel3.Location = new System.Drawing.Point(157, 137);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(71, 32);
@@ -466,9 +537,8 @@ namespace MaterialSkinExample
             // 
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("맑은 고딕", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.materialLabel1.Location = new System.Drawing.Point(119, 240);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(76, 137);
             this.materialLabel1.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(53, 20);
@@ -479,11 +549,10 @@ namespace MaterialSkinExample
             // 
             this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider2.Depth = 0;
-            this.materialDivider2.Location = new System.Drawing.Point(72, 215);
-            this.materialDivider2.Margin = new System.Windows.Forms.Padding(5);
+            this.materialDivider2.Location = new System.Drawing.Point(46, 123);
             this.materialDivider2.MouseState = MaterialSkin2Framework.MouseState.HOVER;
             this.materialDivider2.Name = "materialDivider2";
-            this.materialDivider2.Size = new System.Drawing.Size(36, 74);
+            this.materialDivider2.Size = new System.Drawing.Size(23, 42);
             this.materialDivider2.TabIndex = 0;
             this.materialDivider2.Text = "materialDivider2";
             // 
@@ -493,11 +562,11 @@ namespace MaterialSkinExample
             this.tabPage4.Controls.Add(this.step4Complete);
             this.tabPage4.Controls.Add(this.pictureBox1);
             this.tabPage4.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage4.Location = new System.Drawing.Point(4, 31);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage4.Size = new System.Drawing.Size(1601, 702);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage4.Size = new System.Drawing.Size(1016, 395);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Step4 결과";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -508,7 +577,8 @@ namespace MaterialSkinExample
             this.step4Complete2.Depth = 0;
             this.step4Complete2.Font = new System.Drawing.Font("Roboto", 11F);
             this.step4Complete2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.step4Complete2.Location = new System.Drawing.Point(548, 402);
+            this.step4Complete2.Location = new System.Drawing.Point(349, 230);
+            this.step4Complete2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.step4Complete2.MouseState = MaterialSkin.MouseState.HOVER;
             this.step4Complete2.Name = "step4Complete2";
             this.step4Complete2.Size = new System.Drawing.Size(397, 32);
@@ -521,7 +591,8 @@ namespace MaterialSkinExample
             this.step4Complete.Depth = 0;
             this.step4Complete.Font = new System.Drawing.Font("Roboto", 11F);
             this.step4Complete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.step4Complete.Location = new System.Drawing.Point(418, 289);
+            this.step4Complete.Location = new System.Drawing.Point(266, 165);
+            this.step4Complete.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.step4Complete.MouseState = MaterialSkin.MouseState.HOVER;
             this.step4Complete.Name = "step4Complete";
             this.step4Complete.Size = new System.Drawing.Size(297, 32);
@@ -531,9 +602,10 @@ namespace MaterialSkinExample
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MaterialSkinExample.Properties.Resources.success_tick_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(637, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(405, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 220);
+            this.pictureBox1.Size = new System.Drawing.Size(187, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -613,8 +685,8 @@ namespace MaterialSkinExample
             this.prevBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.prevBtn.Depth = 0;
             this.prevBtn.Icon = null;
-            this.prevBtn.Location = new System.Drawing.Point(1404, 970);
-            this.prevBtn.Margin = new System.Windows.Forms.Padding(6, 10, 6, 10);
+            this.prevBtn.Location = new System.Drawing.Point(862, 539);
+            this.prevBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.prevBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.prevBtn.Name = "prevBtn";
             this.prevBtn.Primary = false;
@@ -628,106 +700,21 @@ namespace MaterialSkinExample
             // 
             this.oracleCommand1.Transaction = null;
             // 
-            // materialListView1
-            // 
-            this.materialListView1.AutoSizeTable = false;
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.status,
-            this.order_id,
-            this.name,
-            this.tags,
-            this.start_time,
-            this.end_time});
-            this.materialListView1.Depth = 0;
-            this.materialListView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(0, 0);
-            this.materialListView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin2Framework.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(1603, 614);
-            this.materialListView1.TabIndex = 0;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
-            // 
-            // status
-            // 
-            this.status.Text = "Status";
-            // 
-            // order_id
-            // 
-            this.order_id.Text = "Order id";
-            // 
-            // name
-            // 
-            this.name.Text = "Name";
-            // 
-            // tags
-            // 
-            this.tags.Text = "Tags";
-            // 
-            // start_time
-            // 
-            this.start_time.Text = "Start Time";
-            // 
-            // end_time
-            // 
-            this.end_time.Text = "End time";
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin2Framework.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(1450, 628);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(6, 10, 6, 10);
-            this.materialButton1.MouseState = MaterialSkin2Framework.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(85, 36);
-            this.materialButton1.TabIndex = 2;
-            this.materialButton1.Text = "내역조회";
-            this.materialButton1.Type = MaterialSkin2Framework.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click_1);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.materialButton1);
-            this.tabPage2.Controls.Add(this.materialListView1);
-            this.tabPage2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 31);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage2.Size = new System.Drawing.Size(1601, 702);
-            this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "Step2 대상작업";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1656, 1015);
+            this.ClientSize = new System.Drawing.Size(1054, 580);
             this.ContextMenuStrip = this.materialContextMenuStrip1;
             this.Controls.Add(this.prevBtn);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.nextBtn);
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.DoubleBuffered = false;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ARK System Batch Alarm";
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -735,14 +722,14 @@ namespace MaterialSkinExample
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.materialContextMenuStrip1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

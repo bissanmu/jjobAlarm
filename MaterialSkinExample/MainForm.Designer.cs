@@ -33,32 +33,31 @@ namespace MaterialSkinExample
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.materialFlatButton2 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
+            this.nextBtn = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialRadioButton4 = new MaterialSkin.Controls.MaterialRadioButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialRadioButton3 = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialRadioButton2 = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialCheckbox4 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckbox3 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckbox2 = new MaterialSkin.Controls.MaterialCheckBox();
             this.materialCheckbox1 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.materialSingleLineTextField2 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRadioButton1 = new MaterialSkin.Controls.MaterialRadioButton();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.materialSingleLineTextField3 = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRadioButton6 = new MaterialSkin2Framework.Controls.MaterialRadioButton();
+            this.materialRadioButton5 = new MaterialSkin2Framework.Controls.MaterialRadioButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.materialCheckBox6 = new MaterialSkin.Controls.MaterialCheckBox();
-            this.materialCheckBox5 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.materialListView1 = new MaterialSkin2Framework.Controls.MaterialListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.materialCheckBox6 = new MaterialSkin.Controls.MaterialCheckBox();
+            this.materialCheckBox5 = new MaterialSkin.Controls.MaterialCheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialFlatButton4 = new MaterialSkin.Controls.MaterialFlatButton();
@@ -72,12 +71,7 @@ namespace MaterialSkinExample
             this.item2ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.item3ToolStripMenuItem = new MaterialSkin.Controls.MaterialToolStripMenuItem();
-            this.materialFlatButton3 = new MaterialSkin.Controls.MaterialFlatButton();
-            this.materialListView1 = new MaterialSkin2Framework.Controls.MaterialListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.prevBtn = new MaterialSkin.Controls.MaterialFlatButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -87,39 +81,23 @@ namespace MaterialSkinExample
             this.materialContextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // materialFlatButton2
+            // nextBtn
             // 
-            this.materialFlatButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton2.AutoSize = true;
-            this.materialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton2.Depth = 0;
-            this.materialFlatButton2.Icon = null;
-            this.materialFlatButton2.Location = new System.Drawing.Point(919, 646);
-            this.materialFlatButton2.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
-            this.materialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton2.Name = "materialFlatButton2";
-            this.materialFlatButton2.Primary = false;
-            this.materialFlatButton2.Size = new System.Drawing.Size(163, 36);
-            this.materialFlatButton2.TabIndex = 13;
-            this.materialFlatButton2.Text = "Secondary";
-            this.materialFlatButton2.UseVisualStyleBackColor = true;
-            // 
-            // materialFlatButton1
-            // 
-            this.materialFlatButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(1073, 646);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = true;
-            this.materialFlatButton1.Size = new System.Drawing.Size(128, 36);
-            this.materialFlatButton1.TabIndex = 1;
-            this.materialFlatButton1.Text = "Primary";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.nextBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.nextBtn.AutoSize = true;
+            this.nextBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.nextBtn.Depth = 0;
+            this.nextBtn.Icon = null;
+            this.nextBtn.Location = new System.Drawing.Point(962, 646);
+            this.nextBtn.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.nextBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Primary = true;
+            this.nextBtn.Size = new System.Drawing.Size(85, 36);
+            this.nextBtn.TabIndex = 1;
+            this.nextBtn.Text = "Next";
+            this.nextBtn.UseVisualStyleBackColor = true;
+            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
             // materialDivider1
             // 
@@ -149,26 +127,11 @@ namespace MaterialSkinExample
             this.materialRadioButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRadioButton4.Name = "materialRadioButton4";
             this.materialRadioButton4.Ripple = true;
-            this.materialRadioButton4.Size = new System.Drawing.Size(276, 30);
+            this.materialRadioButton4.Size = new System.Drawing.Size(267, 30);
             this.materialRadioButton4.TabIndex = 15;
             this.materialRadioButton4.TabStop = true;
             this.materialRadioButton4.Text = "materialRadioButton4";
             this.materialRadioButton4.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(-7, 189);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(1084, 103);
-            this.materialLabel1.TabIndex = 14;
-            this.materialLabel1.Text = resources.GetString("materialLabel1.Text");
             // 
             // materialRadioButton3
             // 
@@ -182,7 +145,7 @@ namespace MaterialSkinExample
             this.materialRadioButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRadioButton3.Name = "materialRadioButton3";
             this.materialRadioButton3.Ripple = true;
-            this.materialRadioButton3.Size = new System.Drawing.Size(276, 30);
+            this.materialRadioButton3.Size = new System.Drawing.Size(267, 30);
             this.materialRadioButton3.TabIndex = 11;
             this.materialRadioButton3.Text = "materialRadioButton3";
             this.materialRadioButton3.UseVisualStyleBackColor = true;
@@ -199,7 +162,7 @@ namespace MaterialSkinExample
             this.materialRadioButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRadioButton2.Name = "materialRadioButton2";
             this.materialRadioButton2.Ripple = true;
-            this.materialRadioButton2.Size = new System.Drawing.Size(276, 30);
+            this.materialRadioButton2.Size = new System.Drawing.Size(267, 30);
             this.materialRadioButton2.TabIndex = 10;
             this.materialRadioButton2.Text = "materialRadioButton2";
             this.materialRadioButton2.UseVisualStyleBackColor = true;
@@ -274,64 +237,6 @@ namespace MaterialSkinExample
             this.materialCheckbox1.Text = "materialCheckbox1";
             this.materialCheckbox1.UseVisualStyleBackColor = true;
             // 
-            // materialSingleLineTextField2
-            // 
-            this.materialSingleLineTextField2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialSingleLineTextField2.Depth = 0;
-            this.materialSingleLineTextField2.Hint = "Another example hint";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(0, 82);
-            this.materialSingleLineTextField2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.materialSingleLineTextField2.MaxLength = 32767;
-            this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
-            this.materialSingleLineTextField2.PasswordChar = '\0';
-            this.materialSingleLineTextField2.SelectedText = "";
-            this.materialSingleLineTextField2.SelectionLength = 0;
-            this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(1069, 36);
-            this.materialSingleLineTextField2.TabIndex = 3;
-            this.materialSingleLineTextField2.TabStop = false;
-            this.materialSingleLineTextField2.UseSystemPasswordChar = false;
-            // 
-            // materialSingleLineTextField1
-            // 
-            this.materialSingleLineTextField1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialSingleLineTextField1.Depth = 0;
-            this.materialSingleLineTextField1.Hint = "This is a hint";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(0, 23);
-            this.materialSingleLineTextField1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.materialSingleLineTextField1.MaxLength = 32767;
-            this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
-            this.materialSingleLineTextField1.PasswordChar = '\0';
-            this.materialSingleLineTextField1.SelectedText = "";
-            this.materialSingleLineTextField1.SelectionLength = 0;
-            this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(1069, 36);
-            this.materialSingleLineTextField1.TabIndex = 2;
-            this.materialSingleLineTextField1.TabStop = false;
-            this.materialSingleLineTextField1.UseSystemPasswordChar = false;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialButton1.AutoSize = true;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(669, 297);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.Primary = true;
-            this.materialButton1.Size = new System.Drawing.Size(206, 36);
-            this.materialButton1.TabIndex = 0;
-            this.materialButton1.Text = "Change Theme";
-            this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
-            // 
             // materialRadioButton1
             // 
             this.materialRadioButton1.AutoSize = true;
@@ -344,7 +249,7 @@ namespace MaterialSkinExample
             this.materialRadioButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRadioButton1.Name = "materialRadioButton1";
             this.materialRadioButton1.Ripple = true;
-            this.materialRadioButton1.Size = new System.Drawing.Size(276, 30);
+            this.materialRadioButton1.Size = new System.Drawing.Size(267, 30);
             this.materialRadioButton1.TabIndex = 9;
             this.materialRadioButton1.Text = "materialRadioButton1";
             this.materialRadioButton1.UseVisualStyleBackColor = true;
@@ -386,74 +291,139 @@ namespace MaterialSkinExample
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.Controls.Add(this.materialSingleLineTextField3);
-            this.tabPage1.Controls.Add(this.materialRaisedButton1);
-            this.tabPage1.Controls.Add(this.materialSingleLineTextField1);
-            this.tabPage1.Controls.Add(this.materialSingleLineTextField2);
-            this.tabPage1.Controls.Add(this.materialButton1);
-            this.tabPage1.Controls.Add(this.materialLabel1);
+            this.tabPage1.Controls.Add(this.materialRadioButton6);
+            this.tabPage1.Controls.Add(this.materialRadioButton5);
+            this.tabPage1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tabPage1.Size = new System.Drawing.Size(1076, 379);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Step1 서버";
             // 
-            // materialSingleLineTextField3
+            // materialRadioButton6
             // 
-            this.materialSingleLineTextField3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialSingleLineTextField3.Depth = 0;
-            this.materialSingleLineTextField3.Hint = "This is a password";
-            this.materialSingleLineTextField3.Location = new System.Drawing.Point(0, 142);
-            this.materialSingleLineTextField3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.materialSingleLineTextField3.MaxLength = 32767;
-            this.materialSingleLineTextField3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField3.Name = "materialSingleLineTextField3";
-            this.materialSingleLineTextField3.PasswordChar = '\0';
-            this.materialSingleLineTextField3.SelectedText = "";
-            this.materialSingleLineTextField3.SelectionLength = 0;
-            this.materialSingleLineTextField3.SelectionStart = 0;
-            this.materialSingleLineTextField3.Size = new System.Drawing.Size(1069, 36);
-            this.materialSingleLineTextField3.TabIndex = 4;
-            this.materialSingleLineTextField3.TabStop = false;
-            this.materialSingleLineTextField3.UseSystemPasswordChar = true;
+            this.materialRadioButton6.AutoSize = true;
+            this.materialRadioButton6.Depth = 0;
+            this.materialRadioButton6.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialRadioButton6.Location = new System.Drawing.Point(139, 182);
+            this.materialRadioButton6.Margin = new System.Windows.Forms.Padding(0);
+            this.materialRadioButton6.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialRadioButton6.MouseState = MaterialSkin2Framework.MouseState.HOVER;
+            this.materialRadioButton6.Name = "materialRadioButton6";
+            this.materialRadioButton6.Ripple = true;
+            this.materialRadioButton6.Size = new System.Drawing.Size(127, 37);
+            this.materialRadioButton6.TabIndex = 23;
+            this.materialRadioButton6.TabStop = true;
+            this.materialRadioButton6.Text = "J-JOBS 검증계";
+            this.materialRadioButton6.UseVisualStyleBackColor = true;
             // 
-            // materialRaisedButton1
+            // materialRadioButton5
             // 
-            this.materialRaisedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialRaisedButton1.AutoSize = true;
-            this.materialRaisedButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Icon = null;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(990, 297);
-            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(304, 36);
-            this.materialRaisedButton1.TabIndex = 21;
-            this.materialRaisedButton1.Text = "Change color scheme";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.materialRadioButton5.AutoSize = true;
+            this.materialRadioButton5.Depth = 0;
+            this.materialRadioButton5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialRadioButton5.Location = new System.Drawing.Point(139, 121);
+            this.materialRadioButton5.Margin = new System.Windows.Forms.Padding(0);
+            this.materialRadioButton5.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialRadioButton5.MouseState = MaterialSkin2Framework.MouseState.HOVER;
+            this.materialRadioButton5.Name = "materialRadioButton5";
+            this.materialRadioButton5.Ripple = true;
+            this.materialRadioButton5.Size = new System.Drawing.Size(127, 37);
+            this.materialRadioButton5.TabIndex = 22;
+            this.materialRadioButton5.TabStop = true;
+            this.materialRadioButton5.Text = "J-JOBS 개발계";
+            this.materialRadioButton5.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.materialCheckBox6);
-            this.tabPage2.Controls.Add(this.materialCheckBox5);
-            this.tabPage2.Controls.Add(this.materialCheckbox3);
-            this.tabPage2.Controls.Add(this.materialCheckbox1);
-            this.tabPage2.Controls.Add(this.materialCheckbox2);
-            this.tabPage2.Controls.Add(this.materialCheckbox4);
+            this.tabPage2.Controls.Add(this.materialListView1);
+            this.tabPage2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tabPage2.Size = new System.Drawing.Size(1076, 379);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Step2 대상작업";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // materialListView1
+            // 
+            this.materialListView1.AutoSizeTable = false;
+            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.materialListView1.Depth = 0;
+            this.materialListView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialListView1.FullRowSelect = true;
+            this.materialListView1.HideSelection = false;
+            this.materialListView1.Location = new System.Drawing.Point(6, 5);
+            this.materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
+            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialListView1.MouseState = MaterialSkin2Framework.MouseState.OUT;
+            this.materialListView1.Name = "materialListView1";
+            this.materialListView1.OwnerDraw = true;
+            this.materialListView1.Size = new System.Drawing.Size(1064, 369);
+            this.materialListView1.TabIndex = 0;
+            this.materialListView1.UseCompatibleStateImageBehavior = false;
+            this.materialListView1.View = System.Windows.Forms.View.Details;
+            this.materialListView1.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Width = 300;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Width = 300;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Width = 300;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Width = 300;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.White;
+            this.tabPage3.Controls.Add(this.materialRadioButton4);
+            this.tabPage3.Controls.Add(this.materialRadioButton1);
+            this.tabPage3.Controls.Add(this.materialRadioButton2);
+            this.tabPage3.Controls.Add(this.materialRadioButton3);
+            this.tabPage3.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage3.Location = new System.Drawing.Point(4, 31);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.tabPage3.Size = new System.Drawing.Size(1076, 379);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Step3 알림단위";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.White;
+            this.tabPage4.Controls.Add(this.materialCheckBox6);
+            this.tabPage4.Controls.Add(this.materialCheckBox5);
+            this.tabPage4.Controls.Add(this.materialCheckbox3);
+            this.tabPage4.Controls.Add(this.materialCheckbox1);
+            this.tabPage4.Controls.Add(this.materialCheckbox2);
+            this.tabPage4.Controls.Add(this.materialCheckbox4);
+            this.tabPage4.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Location = new System.Drawing.Point(4, 31);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.tabPage4.Size = new System.Drawing.Size(1076, 379);
+            this.tabPage4.TabIndex = 1;
+            this.tabPage4.Text = "Step4 최종내역";
             // 
             // materialCheckBox6
             // 
@@ -493,46 +463,20 @@ namespace MaterialSkinExample
             this.materialCheckBox5.Text = "materialCheckBox5";
             this.materialCheckBox5.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.White;
-            this.tabPage3.Controls.Add(this.materialRadioButton4);
-            this.tabPage3.Controls.Add(this.materialRadioButton1);
-            this.tabPage3.Controls.Add(this.materialRadioButton2);
-            this.tabPage3.Controls.Add(this.materialRadioButton3);
-            this.tabPage3.Location = new System.Drawing.Point(4, 31);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage3.Size = new System.Drawing.Size(1076, 379);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "MaterialTabPage3";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.materialListView1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 31);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.tabPage4.Size = new System.Drawing.Size(1076, 379);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "ListView";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.materialLabel2);
             this.tabPage5.Controls.Add(this.materialFlatButton4);
             this.tabPage5.Controls.Add(this.materialRaisedButton2);
             this.tabPage5.Controls.Add(this.materialProgressBar1);
+            this.tabPage5.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage5.Location = new System.Drawing.Point(4, 31);
             this.tabPage5.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tabPage5.Size = new System.Drawing.Size(1076, 379);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
+            this.tabPage5.Text = "이력조회";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // materialLabel2
@@ -667,65 +611,23 @@ namespace MaterialSkinExample
             this.item3ToolStripMenuItem.Size = new System.Drawing.Size(170, 30);
             this.item3ToolStripMenuItem.Text = "Item 3";
             // 
-            // materialFlatButton3
+            // prevBtn
             // 
-            this.materialFlatButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialFlatButton3.AutoSize = true;
-            this.materialFlatButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton3.Depth = 0;
-            this.materialFlatButton3.Enabled = false;
-            this.materialFlatButton3.Icon = null;
-            this.materialFlatButton3.Location = new System.Drawing.Point(742, 646);
-            this.materialFlatButton3.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
-            this.materialFlatButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton3.Name = "materialFlatButton3";
-            this.materialFlatButton3.Primary = false;
-            this.materialFlatButton3.Size = new System.Drawing.Size(135, 36);
-            this.materialFlatButton3.TabIndex = 19;
-            this.materialFlatButton3.Text = "DISABLED";
-            this.materialFlatButton3.UseVisualStyleBackColor = true;
-            // 
-            // materialListView1
-            // 
-            this.materialListView1.AutoSizeTable = false;
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.materialListView1.Depth = 0;
-            this.materialListView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HideSelection = false;
-            this.materialListView1.Location = new System.Drawing.Point(6, 5);
-            this.materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin2Framework.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(1064, 369);
-            this.materialListView1.TabIndex = 0;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
-            this.materialListView1.SelectedIndexChanged += new System.EventHandler(this.materialListView1_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Width = 300;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Width = 300;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Width = 300;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Width = 300;
+            this.prevBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.prevBtn.AutoSize = true;
+            this.prevBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.prevBtn.Depth = 0;
+            this.prevBtn.Icon = null;
+            this.prevBtn.Location = new System.Drawing.Point(864, 646);
+            this.prevBtn.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.prevBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.prevBtn.Name = "prevBtn";
+            this.prevBtn.Primary = false;
+            this.prevBtn.Size = new System.Drawing.Size(84, 36);
+            this.prevBtn.TabIndex = 19;
+            this.prevBtn.Text = "PREV";
+            this.prevBtn.UseVisualStyleBackColor = true;
+            this.prevBtn.Click += new System.EventHandler(this.prevBtn_Click);
             // 
             // MainForm
             // 
@@ -734,23 +636,22 @@ namespace MaterialSkinExample
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1131, 693);
             this.ContextMenuStrip = this.materialContextMenuStrip1;
-            this.Controls.Add(this.materialFlatButton3);
-            this.Controls.Add(this.materialFlatButton2);
+            this.Controls.Add(this.prevBtn);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.materialDivider1);
-            this.Controls.Add(this.materialFlatButton1);
+            this.Controls.Add(this.nextBtn);
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "MainForm";
-            this.Text = "MaterialSkin Demo";
+            this.Text = "ARK System Batch Alarm";
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.materialContextMenuStrip1.ResumeLayout(false);
@@ -760,11 +661,7 @@ namespace MaterialSkinExample
         }
 
         #endregion
-
-        private MaterialSkin.Controls.MaterialRaisedButton materialButton1;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
+        private MaterialSkin.Controls.MaterialFlatButton nextBtn;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckbox1;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckbox2;
         private MaterialSkin.Controls.MaterialCheckBox materialCheckbox3;
@@ -772,14 +669,12 @@ namespace MaterialSkinExample
         private MaterialSkin.Controls.MaterialRadioButton materialRadioButton1;
         private MaterialRadioButton materialRadioButton2;
         private MaterialRadioButton materialRadioButton3;
-        private MaterialFlatButton materialFlatButton2;
-        private MaterialLabel materialLabel1;
         private MaterialRadioButton materialRadioButton4;
         private MaterialDivider materialDivider1;
         private MaterialTabSelector materialTabSelector1;
         private MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage3;
         private MaterialCheckBox materialCheckBox5;
         private MaterialContextMenuStrip materialContextMenuStrip1;
@@ -791,13 +686,11 @@ namespace MaterialSkinExample
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem disabledItemToolStripMenuItem;
 		private MaterialCheckBox materialCheckBox6;
-		private MaterialRaisedButton materialRaisedButton1;
-        private MaterialSingleLineTextField materialSingleLineTextField3;
-		private TabPage tabPage4;
+		private TabPage tabPage2;
         private TabPage tabPage5;
         private MaterialProgressBar materialProgressBar1;
         private MaterialRaisedButton materialRaisedButton2;
-        private MaterialFlatButton materialFlatButton3;
+        private MaterialFlatButton prevBtn;
         private MaterialFlatButton materialFlatButton4;
         private MaterialLabel materialLabel2;
         private MaterialSkin2Framework.Controls.MaterialListView materialListView1;
@@ -805,5 +698,7 @@ namespace MaterialSkinExample
         private ColumnHeader columnHeader2;
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
+        private MaterialSkin2Framework.Controls.MaterialRadioButton materialRadioButton5;
+        private MaterialSkin2Framework.Controls.MaterialRadioButton materialRadioButton6;
     }
 }

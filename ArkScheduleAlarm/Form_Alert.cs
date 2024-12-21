@@ -3,9 +3,9 @@ using System.Diagnostics;
 using System.Drawing;
 
 using System.Windows.Forms;
-using MaterialSkinExample.Properties;
+using ArkScheduleAlarm.Properties;
 
-namespace MaterialSkinExample
+namespace ArkScheduleAlarm
 {
     public partial class Form_Alert : Form
     {

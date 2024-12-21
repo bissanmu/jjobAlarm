@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
-namespace MaterialSkinExample
+namespace ArkScheduleAlarm
 {
     partial class Form_Alert
     {

@@ -3,7 +3,7 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
 
-namespace MaterialSkinExample
+namespace ArkScheduleAlarm
 {
     partial class MainForm
     {
@@ -601,7 +601,7 @@ namespace MaterialSkinExample
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MaterialSkinExample.Properties.Resources.success_tick_icon;
+            this.pictureBox1.Image = global::ArkScheduleAlarm.Properties.Resources.success_tick_icon;
             this.pictureBox1.Location = new System.Drawing.Point(405, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MaterialSkinExample
+namespace ArkScheduleAlarm
 {
     internal static class Program
     {

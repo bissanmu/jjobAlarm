@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace MaterialSkinExample
+namespace ArkScheduleAlarm
 {
     public partial class MainForm : MaterialForm
     {
